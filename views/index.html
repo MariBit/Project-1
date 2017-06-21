@@ -4,5 +4,18 @@
   </head>
   <body>
     <h1><abbr title="Body Mass Index">BMI Calculator</abbr></h1>
+    <p>The formula for calculating one's BMI is: (Weight in Kilograms / (Height in Meters x Height in Meters))</p>
+    <form id="frm1" action="/action_page.php">
+  Age <input type="text" name="age"><br>
+  Weight <input type="text" name="height"><br>
+  Height <input type="text" name="weight"><br>
+  <input type="button" onclick="myFunction()" value="Submit">
+</form>
+
+<script>
+function myFunction() {
+    document.getElementById("frm1").submit();
+}
+</script>
   </body>
 </html>
