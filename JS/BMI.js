@@ -24,6 +24,7 @@ function computeBMI() {
     // document.getElementById("answer").value = output;
 }
 
+
 function myFunction() {
 document.getElementById("myForm").reset();
 }
