@@ -1,0 +1,76 @@
+html, body{
+  background:linear-gradient(to bottom,#4ca2cd,#67b26f);
+  text-align: center;
+  background-size: cover;
+  border: none;
+  height:100%;
+
+}
+
+body{
+  background-color: rgba(255,255,255,0.6);
+  background-repeat: no-repeat;
+}
+
+h1
+{
+font-family: 'Slabo 27px', serif;
+font-size: 36px;
+
+}
+h2, h3{
+font-family: 'Roboto Condensed', sans-serif;
+font-size: 24px;
+
+}
+p{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 22px;
+}
+#formula, .button{
+  font-family: 'Slabo 27px', serif;
+  font-size: 27px;
+}
+.button{
+ height:40%;
+ width:10%;
+ text-align: center;
+ display: inline-block;
+}
+.values {
+font-family: 'Oswald', sans-serif;
+font-size:16px;
+}
+option{
+  width:4%;
+  height:9%;
+}
+a{
+  text-decoration: none;
+  color:#884581;
+}
+#webs:hover{
+  text-shadow: #552b51-.5px 15px 10px;
+}
+#comment, #output,.imagesource{
+  font-size: 24px;
+  color:black;
+}
+a img { display:none; }
+a:hover img {
+  position:fixed;
+  display:block;
+  height:48%;
+  width:32%;
+  top:22%;
+  right:1.5%;
+
+}
+.extra {
+    display: none;
+}
+
+h1:hover .extra {
+    display:block;
+    font-size: 20px;
+}

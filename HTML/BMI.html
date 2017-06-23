@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+       <head>
+        <title>BMI Calculator</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../CSS/BMI.css">
+        <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed|Slabo+27px" rel="stylesheet">
+        <script type="text/javascript" src="../JavaScript/BMI.js"></script>
+     </head>
+     <body>
+       <h1><abbr title="Body Mass Index">BMI</abbr> Calculator:<span class="extra">BMI does not actually "measure" your percentage of body fat, it is a useful tool to estimate a healthy body weight based on your height.</span></h1>
+<h3 id="formula">The formula for calculating one's BMI is:<i><br> Weight in Kilograms / (Height in Meters * Height in Meters)</i></h3>
+  <form id="myForm">  <p>Enter your age: <input class="values" type="text" id="age" placeholder="25"/></p>
+    <p>Enter your gender:
+      <input type="radio" name="gender" value="Male"> Male
+      <input type="radio" name="gender" value="Female"> Female
+    </p>
+
+    <p>Enter your height: <input  class="values" type="text" id="height" placeholder="1.75" required=""/>
+        <select type="multiple" id="heightunits">
+            <option value="metres" selected="selected">metres</option>
+            <option value="inches">inches</option>
+        </select>
+         </p>
+
+    <p>Enter your weight: <input class="values" type="text" id="weight" placeholder="70" required=""/>
+        <select type="multiple" id="weightunits">
+            <option value="kg" selected="selected">kilograms</option>
+            <option value="lb">pounds</option>
+        </select>
+    </p>
+
+  </form>
+  <div class="wrapper">
+    <input  class="button" type="submit" value="Calculate" onclick="computeBMI()">
+  </div>
+    <br>
+    <div class="wrapper">
+    <input class="button" type="button" onclick="myFunction()" value="Reset form">
+  </div>
+
+    <h2>Your BMI is: <a class="imagesource"href ="#"><span id="output"></span><img src="http://d26tpo4cm8sb6k.cloudfront.net/img/bmi-chart.gif" /></a></h2>
+
+    <h3>This means you are: <a class="imagesource"href ="#"><span id="comment"> </span> <img src="http://d26tpo4cm8sb6k.cloudfront.net/img/bmi-chart.gif" /></a></h3>
+    <footer>
+      <p>For more information click <a href="https://www.cdc.gov/healthyweight/assessing/bmi/index.html" target="_blank" id="webs">here:<a></p>
+    </footer>
+</html>
