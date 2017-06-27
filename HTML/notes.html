@@ -1,0 +1,48 @@
+<!DOCTYPE>
+<html>
+    <head>
+      <meta charset="UTF-8">
+    <title>Notepad</title>
+
+    </head>
+        <body>
+        <form id="form">
+
+            <h1><b>Please enter note:</b></h1>
+        <hr size="3"/>
+        <br>
+
+            <label for="title">Title:</label> <input id="title" type="text" />
+        <br>
+
+            <label for="name">Story:</label><input id="name" type="text" />
+        <br>
+        <br>
+            <input type="button" value="Add" onclick="clearAndShow();">
+            <input type="button" value="Save" onclick="insert();">
+            <input type="button" value="Delete" onclick = "delBoxes();" />
+            <br>
+
+            <h2><b>Note:</b></h2>
+        <hr>
+        </form>
+
+
+        <div id="display">
+			<ul id="list">
+        <li>
+          <input type="checkbox" name="che" value="Starter">
+          The Lion and the Mouse
+          <br>
+          Once when a lion, the king of the jungle, was asleep, a little mouse began running up and down on him. This soon awakened the lion, who placed his huge paw on the mouse, and opened his big jaws to swallow him. Pardon, O King! cried the little mouse. Forgive me this time. I shall never repeat it and I shall never forget your kindness. And who knows, I may be able to do you a good turn one of these days! The lion was so tickled by the idea of the mouse being able to help him that he lifted his paw and let him go. Sometime later, a few hunters captured the lion, and tied him to a tree. After that they went in search of a wagon, to take him to the zoo. Just then the little mouse happened to pass by. On seeing the lion’s plight, he ran up to him and gnawed away the ropes that bound him, the king of the jungle. Was I not right? said the little mouse, very happy to help the lion.
+          <br>
+          <br>
+          MORAL: Small acts of kindness will be rewarded greatly.
+				</li>
+			</ul>
+            </div>
+
+            <script type="text/javascript" src="../JS/notes.js"></script>
+        </body>
+
+</html>

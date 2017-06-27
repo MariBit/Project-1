@@ -1,0 +1,86 @@
+html{
+  background:linear-gradient(to bottom,#000046,#1cb5e0);
+  text-align: center;
+  background-size: cover;
+  border: none;
+
+}
+body{
+  background-repeat: no-repeat;
+}
+h1{
+  font-family: 'Crushed', cursive;
+  text-align: center;
+  font-size: 60px;
+  color: white;
+  margin-top: 2.5%;
+
+}
+.subtitle{
+  font-size: 30px;
+}
+h2{
+  font-family: 'Fjalla One', sans-serif;
+  text-align: center;
+  font-size:30px;
+  color:white;
+}
+p{
+  font-family: 'Fjalla One', sans-serif;
+  text-align: center;
+  font-size: 26px;
+  color:white;
+}
+td{
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  color:black;
+}
+th,.caption{
+font-family: 'Ubuntu Condensed', sans-serif;
+text-align: center;
+font-size: 26px;
+}
+.caption{
+  font-size: 14px;
+  color:black;
+}
+table{
+  position: relative;
+  width:30%;
+  height:50%;
+  border: 2px solid #8bdaf1;
+  border-radius: 8px;
+  margin-right: 2%;
+  margin-left: 2%;
+  margin-bottom: 3%;
+  display: inline-grid;
+  background-color: white;
+  box-shadow: 3px 3px 3px #b1eaff;
+  -webkit-transition: all .5s; /* For Safari 3.1 to 6.0 */
+  transition: all .5s;
+  float:left;
+  cursor:pointer;
+}
+.app3{
+margin-left: 3.5%;
+}
+.app2{
+  margin-right: 2.15%;
+}
+.app{
+  margin-left: 1.5%;
+}
+#col-3-row-2{
+  float:left;
+  margin-left: 3.25%;
+  margin-right: 0%;
+}
+.linktitle{
+  color:#1788ff;
+}
+table:hover{
+  background-color:#b8d9f6;
+  color:#b8d9f6;
+}
