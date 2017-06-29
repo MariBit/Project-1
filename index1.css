@@ -19,11 +19,15 @@ h1{
 .subtitle{
   font-size: 30px;
 }
-h2{
+h2,.h4{
   font-family: 'Fjalla One', sans-serif;
   text-align: center;
-  font-size:30px;
+  font-size:38px;
   color:white;
+}
+.h4{
+  font-size: 30px;
+  color:#5500a9;
 }
 p{
   font-family: 'Fjalla One', sans-serif;
@@ -49,7 +53,7 @@ font-size: 26px;
 table{
   position: relative;
   width:30%;
-  height:50%;
+  height:45%;
   border: 2px solid #8bdaf1;
   border-radius: 8px;
   margin-right: 2%;
@@ -78,9 +82,28 @@ margin-left: 3.5%;
   margin-right: 0%;
 }
 .linktitle{
-  color:#1788ff;
+  color:#5500a9;
 }
 table:hover{
-  background-color:#b8d9f6;
-  color:#b8d9f6;
+  background-color:rgb(220,241,250);
+  color:#4141ff;
+  width:31%;
+  box-shadow: 5px 5px 4px #3c0077;
+}
+#ref{
+  font-size: 23px;
+  color:black;
+}
+#reflection{
+width:96%;
+height:20%;
+}
+#reflection:hover{
+  width:97%;
+}
+#btp{
+  text-align: center;
+  color:#3c0077;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size:23px;
 }
