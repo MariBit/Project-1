@@ -3,6 +3,10 @@ var names   = [];
 var notepad = [{title:"hello", name:"bye"}];
 
 function init(){
+  var note1= $('ul').append(
+    '<li class="drag" draggable="true">' +'<img src =../IMG/cancel-music-2.svg class="deleteMe">'+
+      "<p>Title: Ex. Phone Number"+'<br>'+ " Note:Bob Bennett:+(30)6986962631"+'</p>'+'<p id="source"> Icon made by <a href="http://www.freepik.com" target="_blank" >Freepik</a> from <a href ="http://www.flaticon.com" target ="_blank"> www.flaticon.com</a></p>'+
+    '</li>');
   console.log("Once when a lion, the king of the jungle, was asleep, a little mouse began running up and down on him. This soon awakened the lion, who placed his huge paw on the mouse, and opened his big jaws to swallow him. Pardon, O King! cried the little mouse. Forgive me this time. I shall never repeat it and I shall never forget your kindness. And who knows, I may be able to do you a good turn one of these days! The lion was so tickled by the idea of the mouse being able to help him that he lifted his paw and let him go. Sometime later, a few hunters captured the lion, and tied him to a tree. After that they went in search of a wagon, to take him to the zoo. Just then the little mouse happened to pass by. On seeing the lion’s plight, he ran up to him and gnawed away the ropes that bound him, the king of the jungle. Was I not right? said the little mouse, very happy to help the lion.");
 }
 
@@ -45,19 +49,18 @@ $(document).ready(
 
                     $('ol').sortable();*/
         $('#button').on('click',addNote);
-        $('.deleteMe').on('click',deleteNote);
+        $('#list').on('click','.deleteMe',deleteNote);
   });
 
     function addNote(){
       var toAdd = $('input[name=title]').val();
       var toAdd2 =$('input[name=name]').val();
+
       console.log("I am the 1 loop");
       var note= $('ul').append(
-        '<li class="new">' +
-          "<p>Title: "+ toAdd + " Note: "+ toAdd2 +'</p>'+
-          '<button class="deleteMe">'+"Delete"+'</button>'
-        +'</li>');
-      //'<p>'+"To delete double click"+'</p>'+
+        '<li class="drag" draggable="true">' +'<img src =../IMG/cancel-music-2.svg class="deleteMe">'+
+          "<p>Title: "+ toAdd +'<br>'+" Note: "+ toAdd2 +'</p>'+'<p id="source"> Icon made by <a href="http://www.freepik.com" target="_blank" >Freepik</a> from <a href ="http://www.flaticon.com" target ="_blank"> www.flaticon.com</a></p>'+
+        '</li>');
       console.log("I am the  2 loop");
 
     }
@@ -65,22 +68,17 @@ $(document).ready(
     function deleteNote(){
       var note = $(this)
       console.log("class class");
-      $(this).remove();
+      $(this).closest("li").remove();
     }
 
-/*$(document).ready(function(){
-      $(".deleteMe").click(function(){
-         $(this).closest(".new").remove();
-      });
-});
+    function drag() {
+      //var note = $(this)
+      console.log("drag drag drag");
+      $( "li" ).draggable();
+       $( "#droppable" ).droppable();
+        }
 
 
-$(document).ready(function(){
-$(".delete").click(function(){
-    $("li").remove();
-  });
-});
-*/
 
 function myFunction() {
 document.getElementById("form").reset();
@@ -91,10 +89,10 @@ importance.onchange = runBackgroundChange;
 
 function runBackgroundChange(first){
     var value = first.srcElement.options[first.srcElement.selectedIndex].value;
-    if (value != 1) {
-        document.getElementById('myList').style.backgroundColor="green";
+    if (value != 2) {
+        document.getElementById('myList').style.backgroundColor="orange";
     } else {
-        document.getElementById('myList').style.backgroundColor="black";
+        document.getElementById('myList').style.backgroundColor="orange";
     };
 }
 
