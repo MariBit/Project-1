@@ -3,10 +3,11 @@ var names   = [];
 var notepad = [{title:"hello", name:"bye"}];
 
 function init(){
+  var image ="../IMG/phone.jpg";
   var note1= $('ul').append(
     '<li class="drag" draggable="true">' +'<img src =../IMG/cancel-music-2.svg class="deleteMe">'+
       "<p>Title: Ex. Phone Number"+'<br>'+ " Note: Bob Bennett:+(30)6986962631"+'</p>'+'<br>'+
-      //+
+        '<img class="chosen" src='+image +'/>'+'<br>'+
       '<p id="source"> Icon made by <a href="http://www.freepik.com" target="_blank" >Freepik</a> from <a href ="http://www.flaticon.com" target ="_blank"> www.flaticon.com</a></p>'+
     '</li>');
 
@@ -62,11 +63,8 @@ $(document).ready(
       var toAdd = $('input[name=title]').val();
       var toAdd2 =$('input[name=name]').val();
       //var image ="../IMG/example.jpg";
-            console.log("pre image",$('#imgInp'));
+
       var image = "../IMG/" + $('#imgInp').val().replace(/C:\\fakepath\\/i, '');
-            console.log("image print", $('#imgInp').val());
-
-
 
 
 
@@ -90,19 +88,9 @@ $(document).ready(
            if (input.files && input.files[0]) {
                var reader = new FileReader();
 
-              /* reader.onload = function (e) {
-
-                   $('#blah').attr('src', "../IMG" + e.target.result);
-                 console.log("image source");
-               }*/
-
                reader.readAsDataURL(input.files[0]);
            }
        }
-
-/*       $("#imgInp").change(function(){
-           readURL(this);
-       });*/
 
     function deleteNote(){
       var note = $(this)
@@ -122,13 +110,14 @@ importance.onchange = runBackgroundChange;
 
 function runBackgroundChange(first){
     var value = first.srcElement.options[first.srcElement.selectedIndex].value;
-    if (value != 2) {
+    if (value != 1) {
         document.getElementById('myList').style.backgroundColor="orange";
+        console.log("option1");
     } else {
-        document.getElementById('myList').style.backgroundColor="orange";
+        document.getElementById('myList').style.backgroundColor="red";
+        console.log("option2");
     };
 }
-
 
 
 

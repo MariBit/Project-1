@@ -16,6 +16,8 @@ h1
 {
 font-family: 'Slabo 27px', serif;
 font-size: 36px;
+float: none;
+
 
 }
 h2, h3{
@@ -73,4 +75,23 @@ a:hover img {
 h1:hover .extra {
     display:block;
     font-size: 20px;
+}
+#left{
+margin-left: 4%;
+margin-right: 4%;
+margin-top: 1%;
+margin-bottom: .3%;
+padding-left: 4.5%;
+padding-right: 4.5%;
+width:20%;
+
+}
+
+hr{
+  border: 0;
+height: 2px;
+background-image: -webkit-linear-gradient(left, #159957, #155799, #159957);
+background-image: -moz-linear-gradient(left, #159957, #155799, #159957);
+background-image: -ms-linear-gradient(left, #159957, #155799, #159957);
+background-image: -o-linear-gradient(left, #159957, #155799, #159957);
 }
