@@ -15,11 +15,11 @@
           <p id="right"><a href ="">Notepad </a></p>
 
         </nav>
-            <hr>    <hr>    <hr>    <hr>
+
           <div class="bck">
         <h1><b>Notepad</b></h1>
               <hr size="30"/>
-          <h2><b>Please enter note:</b></h1>
+          <h2><b>Please enter note:</b></h2>
       <label>Select Importance:</label>
          <select id = "myList" >
            <option val="">----</option>
@@ -39,6 +39,9 @@
           <!--  <input  class="button"  id ="addb" type="button" value="Add" onclick="clearAndShow();">-->
           <!--  <input id="removebtn"  type="button" value="Delete"/>-->
         <!--  <input class="button" type="button" value="Delete" onclick = "delBoxes();" />-->
+            <form id="form9" runat="server">
+                <input  class ="button" type='file' id="imgInp"/>
+            </form>
           <input class="button"  type="button" value="Save" onclick="insert();">
           <input class="button" type="button" onclick="myFunction()" value="Reset form">
           <br>
@@ -47,9 +50,8 @@
 <div id="backdrop">
           <h2><b>Note:</b></h2>
       </form>
-  <div id="display" >
+  <div id="display">
     <ul id="list">
-
     </ul>
   </div>
 </div>
@@ -63,6 +65,7 @@
           <script type="text/javascript" src="../JS/notes.js"></script>
           <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css">
           <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
-        </div>
+
 </body>
+  </div>
 </html>

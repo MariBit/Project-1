@@ -28,7 +28,10 @@ label{
 }
 .button{
   font-family: 'Fjalla One', sans-serif;
-  font-size: 25px;
+  font-size: 15px;
+}
+#imgInp{
+width:6%;
 }
 aside{
   text-align: left;
@@ -59,17 +62,22 @@ li{
   float:left;
   float: inline-block;
   padding: 2%;
-  height: 20%;
-  width:14%;
+  height:200px;
+  width:200px;
+  /*height: 30%;
+  width:14%;*/
   position: relative;
   margin:2%;
 }
 
-.bck{
+body{
   background-color: rgba(255, 250, 250, 0.15);
   border-radius: 5px;
   text-align: center;
-  min-height: 110%;
+  /*min-height: 100%;*/
+  margin: 1%;
+  padding: 1%;
+
 }
 nav{
   text-align: center;
@@ -82,6 +90,16 @@ img{
   -webkit-transition: -webkit-transform .35s ease-in-out;
           transition:         transform .35s ease-in-out;
   cursor:alias;
+}
+.chosen{
+  float:none;
+  text-align: center;
+  height:50%;
+  width:100%;
+  -moz-transition: none;
+   -webkit-transition: none;
+   -o-transition: color 0 ease-in;
+   transition: none;
 }
 #source,a{
   font-size:15%;

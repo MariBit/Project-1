@@ -5,8 +5,11 @@ var notepad = [{title:"hello", name:"bye"}];
 function init(){
   var note1= $('ul').append(
     '<li class="drag" draggable="true">' +'<img src =../IMG/cancel-music-2.svg class="deleteMe">'+
-      "<p>Title: Ex. Phone Number"+'<br>'+ " Note: Bob Bennett:+(30)6986962631"+'</p>'+'<p id="source"> Icon made by <a href="http://www.freepik.com" target="_blank" >Freepik</a> from <a href ="http://www.flaticon.com" target ="_blank"> www.flaticon.com</a></p>'+
+      "<p>Title: Ex. Phone Number"+'<br>'+ " Note: Bob Bennett:+(30)6986962631"+'</p>'+'<br>'+
+      //+
+      '<p id="source"> Icon made by <a href="http://www.freepik.com" target="_blank" >Freepik</a> from <a href ="http://www.flaticon.com" target ="_blank"> www.flaticon.com</a></p>'+
     '</li>');
+
   console.log("Once when a lion, the king of the jungle, was asleep, a little mouse began running up and down on him. This soon awakened the lion, who placed his huge paw on the mouse, and opened his big jaws to swallow him. Pardon, O King! cried the little mouse. Forgive me this time. I shall never repeat it and I shall never forget your kindness. And who knows, I may be able to do you a good turn one of these days! The lion was so tickled by the idea of the mouse being able to help him that he lifted his paw and let him go. Sometime later, a few hunters captured the lion, and tied him to a tree. After that they went in search of a wagon, to take him to the zoo. Just then the little mouse happened to pass by. On seeing the lion’s plight, he ran up to him and gnawed away the ropes that bound him, the king of the jungle. Was I not right? said the little mouse, very happy to help the lion.");
     $('.drag').draggable();
 }
@@ -40,21 +43,66 @@ $(document).ready(
       init();
         $('#button').on('click',addNote);
         $('#list').on('click','.deleteMe',deleteNote);
+        $('#imgInp').on('click', readURL(this));
+
+        adaptHeight();
+
   });
+
+
+ function adaptHeight(){
+   //console.log($(document). height());
+   var height = $(document). height();
+   $('body').css('height',height);
+   //console.log($('body').height());
+
+ }
 
     function addNote(){
       var toAdd = $('input[name=title]').val();
       var toAdd2 =$('input[name=name]').val();
+      //var image ="../IMG/example.jpg";
+            console.log("pre image",$('#imgInp'));
+      var image = "../IMG/" + $('#imgInp').val().replace(/C:\\fakepath\\/i, '');
+            console.log("image print", $('#imgInp').val());
+
+
+
+
+
+
 
       console.log("I am the 1 loop");
       var note= $('ul').append(
         '<li class="drag" draggable="true">' +'<img src =../IMG/cancel-music-2.svg class="deleteMe">'+
-          "<p>Title: "+ toAdd +'<br>'+" Note: "+ toAdd2 +'</p>'+'<p id="source"> Icon made by <a href="http://www.freepik.com" target="_blank" >Freepik</a> from <a href ="http://www.flaticon.com" target ="_blank"> www.flaticon.com</a></p>'+
+          "<p>Title: "+ toAdd +'<br>'+" Note: "+ toAdd2 +'<br>'+
+          '<img class="chosen" src='+image +'/>'+'<br>'+
+          //alt="not available"
+          '</p>'+'<p id="source"> Icon made by <a href="http://www.freepik.com" target="_blank" >Freepik</a> from <a href ="http://www.flaticon.com" target ="_blank"> www.flaticon.com</a></p>'+
         '</li>');
       console.log("I am the  2 loop");
         $('.drag').draggable();
 
+        adaptHeight();
     }
+
+    function readURL(input) {
+           if (input.files && input.files[0]) {
+               var reader = new FileReader();
+
+              /* reader.onload = function (e) {
+
+                   $('#blah').attr('src', "../IMG" + e.target.result);
+                 console.log("image source");
+               }*/
+
+               reader.readAsDataURL(input.files[0]);
+           }
+       }
+
+/*       $("#imgInp").change(function(){
+           readURL(this);
+       });*/
 
     function deleteNote(){
       var note = $(this)
@@ -62,12 +110,6 @@ $(document).ready(
       $(this).closest("li").remove();
     }
 
-/*$(document).ready(function(){
-  console.log("I am the drag");
-  $('li').click(function(){
-    $('li').draggable();
-  });
-});*/
 
 
 
