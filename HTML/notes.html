@@ -6,43 +6,63 @@
     <link rel="stylesheet" href="../CSS/notes.css">
       <link href="https://fonts.googleapis.com/css?family=Athiti|Bree+Serif|Crushed|Dosis|Fjalla+One|Open+Sans+Condensed:300|Ubuntu+Condensed|Yanone+Kaffeesatz" rel="stylesheet">
     </head>
-        <body>
-        <form id="form">
 
-            <h1><b>Notepad</b></h1>
-                <hr size="3"/>
-            <h2><b>Please enter note:</b></h1>
-        <br>
+      <body>
+      <form id="form">
+        <nav>
+          <p id="right"><a href="../index.html">Home</a></p>
+          <p id="right"><a href="../HTML/BMI.html"> BMI Calculator </a></p>
+          <p id="right"><a href ="">Notepad </a></p>
 
-            <label for="title">Title:</label> <input class="textbox"  id="title" type="textarea" placeholder="Ex.Grocery List" />
-        <br>
-        <br>
-            <label for="name">Note:</label><input class="textbox" id="name" type="textarea" placeholder="Ex.Eggs, Milk, Meat"/>
-        <br>
-        <br>
-            <input  class="button" type="button" value="Add" onclick="clearAndShow();">
-            <input class="button" type="button" value="Delete" onclick = "delBoxes();" />
-            <input class="button"  type="button" value="Save" onclick="insert();">
-            <input class="button" type="button" onclick="myFunction()" value="Reset form">
-            <br>
-          <hr>
+        </nav>
+            <hr>    <hr>    <hr>    <hr>
+          <div class="bck">
+        <h1><b>Notepad</b></h1>
+              <hr size="30"/>
+          <h2><b>Please enter note:</b></h1>
+      <label>Select Importance:</label>
+         <select id = "myList" >
+           <option val="">----</option>
+           <option val= "1">Important</option>
+           <option val = "2">None</option>
+         </select>
+         <br>
+          <br>
+        <!--  <input type="text" name="ListItem"/>-->
+          <label for="title">Title:</label> <input class="textbox" name="title" id="title" type="text" placeholder="Ex.Grocery List" />
+      <br>
+      <br>
+          <label for="name">Note:</label><input class="textbox" id="name" name="name" type="text" placeholder="Ex.Eggs, Milk, Meat"/>
+      <br>
+      <br>
+            <input id="button" class="button" type="button" value="Add"/>
+          <!--  <input  class="button"  id ="addb" type="button" value="Add" onclick="clearAndShow();">-->
+          <!--  <input id="removebtn"  type="button" value="Delete"/>-->
+        <!--  <input class="button" type="button" value="Delete" onclick = "delBoxes();" />-->
+          <input class="button"  type="button" value="Save" onclick="insert();">
+          <input class="button" type="button" onclick="myFunction()" value="Reset form">
+          <br>
+        <b><hr size ="8"> </b>
 <aside>
-  <div id="backdrop">
-            <h2><b>Note:</b></h2>
-        </form>
-    <div id="display" >
-			<ul id="list">
-         <li id="paragraph">
-           <input type="checkbox" class="check" value="Starter">
-           <i>Ex:</i>  Phone Number:
-           <br>
-           Bob Bennett:+(30)6986962631
-         </li>
-			</ul>
-    </div>
-    </div>
-</aside>
-            <script type="text/javascript" src="../JS/notes.js"></script>
+<div id="backdrop">
+          <h2><b>Note:</b></h2>
+      </form>
+  <div id="display" >
+    <ul id="list">
 
-        </body>
+    </ul>
+  </div>
+</div>
+</aside>
+          <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+      <!--<script type="text/javascript" src="../JS/notes.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js" type="text/javascript"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" type="text/javascript"></script>-->
+
+          <script type="text/javascript" src="../JS/notes.js"></script>
+          <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css">
+          <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+        </div>
+</body>
 </html>

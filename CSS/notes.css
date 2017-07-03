@@ -20,7 +20,7 @@ h2{
 }
 li,p{
 font-family: 'Yanone Kaffeesatz', sans-serif;
-font-size: 22px;
+font-size: 100%;
 }
 label{
   font-family: 'Ubuntu Condensed', sans-serif;
@@ -29,13 +29,6 @@ label{
 .button{
   font-family: 'Fjalla One', sans-serif;
   font-size: 25px;
-}
-body{
-  background-color: rgba(255, 250, 250, 0.15);
-  border-radius: 5px;
-  bottom:5%;
-  padding: 1%;
-  text-align: center;
 }
 aside{
   text-align: left;
@@ -53,4 +46,62 @@ background-image: -o-linear-gradient(left, #ff9966, #ff5e62, #ff9966);
 }
 a{
   color:white;
+}
+select option[value="1"] { /* value not val */
+    background:coral;
+}
+
+select option[value="2"] { /* value not val */
+    background: orange;
+}
+li{
+  background-color: coral;
+  float:left;
+  float: inline-block;
+  padding: 2%;
+  height: 20%;
+  width:14%;
+  position: relative;
+  margin:2%;
+}
+
+.bck{
+  background-color: rgba(255, 250, 250, 0.15);
+  border-radius: 5px;
+  text-align: center;
+  min-height: 110%;
+}
+nav{
+  text-align: center;
+}
+img{
+  height:10%;
+  width:10%;
+  position: relative;
+  float:right;
+  -webkit-transition: -webkit-transform .35s ease-in-out;
+          transition:         transform .35s ease-in-out;
+  cursor:alias;
+}
+#source,a{
+  font-size:15%;
+  color:black;
+
+  margin-bottom: 1%;
+}
+img:hover{
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+#right{
+  font-size: 100px;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  position:relative;
+  margin-right:3%;
+  margin-left: 3%;
+  margin-top: 0%;
+  top:0%;
+  float: left;
+  width: 27%;
+  margin:3%;
 }
