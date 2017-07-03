@@ -20,7 +20,7 @@ h2{
 }
 li,p{
 font-family: 'Yanone Kaffeesatz', sans-serif;
-font-size: 22px;
+font-size: 100%;
 }
 label{
   font-family: 'Ubuntu Condensed', sans-serif;
@@ -65,13 +65,15 @@ li{
   margin:2%;
 }
 
-body{
+.bck{
   background-color: rgba(255, 250, 250, 0.15);
   border-radius: 5px;
   text-align: center;
-  min-height: 100%;
+  min-height: 110%;
 }
-
+nav{
+  text-align: center;
+}
 img{
   height:10%;
   width:10%;
@@ -79,10 +81,10 @@ img{
   float:right;
   -webkit-transition: -webkit-transform .35s ease-in-out;
           transition:         transform .35s ease-in-out;
-  cursor:move;
+  cursor:alias;
 }
 #source,a{
-  font-size: 14px;
+  font-size:15%;
   color:black;
 
   margin-bottom: 1%;
@@ -90,4 +92,16 @@ img{
 img:hover{
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
+}
+#right{
+  font-size: 100px;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  position:relative;
+  margin-right:3%;
+  margin-left: 3%;
+  margin-top: 0%;
+  top:0%;
+  float: left;
+  width: 27%;
+  margin:3%;
 }
