@@ -7,18 +7,13 @@
       <link href="https://fonts.googleapis.com/css?family=Athiti|Bree+Serif|Crushed|Dosis|Fjalla+One|Open+Sans+Condensed:300|Ubuntu+Condensed|Yanone+Kaffeesatz" rel="stylesheet">
     </head>
 
-      <body>
       <form id="form">
         <nav>
-          <p id="right"><a href="../index.html">Home</a></p>
-          <p id="right"><a href="../HTML/BMI.html"> BMI Calculator </a></p>
-          <p id="right"><a href ="">Notepad </a></p>
-
+          <p><a id="right" href="../index.html">Home</a><a id="right" href="../HTML/BMI.html"> BMI Calculator </a><a id="right" href ="">Notepad </a></p>
         </nav>
-
           <div class="bck">
         <h1><b>Notepad</b></h1>
-              <hr size="30"/>
+              <hr>
           <h2><b>Please enter note:</b></h2>
       <label>Select Importance:</label>
          <select id = "myList" >
@@ -35,15 +30,17 @@
           <label for="name">Note:</label><input class="textbox" id="name" name="name" type="text" placeholder="Ex.Eggs, Milk, Meat"/>
       <br>
       <br>
-            <input id="button" class="button" type="button" value="Add"/>
+        <label class="custom-file-upload">Photo:</label>
+          <form id="form9" runat="server" >
+            <input type='file'class="font" id="imgInp" />
+        </form>
+        <br>
+            <input id="button" class="action-button shadow animate blue"type="button" value="Add"/>
           <!--  <input  class="button"  id ="addb" type="button" value="Add" onclick="clearAndShow();">-->
           <!--  <input id="removebtn"  type="button" value="Delete"/>-->
-        <!--  <input class="button" type="button" value="Delete" onclick = "delBoxes();" />-->
-            <form id="form9" runat="server">
-                <input  class ="button" type='file' id="imgInp"/>
-            </form>
-          <input class="button"  type="button" value="Save" onclick="insert();">
-          <input class="button" type="button" onclick="myFunction()" value="Reset form">
+        <!--  <input class="button" type="button" value="Delete" onclick = "delBoxes();" />
+          <input class="button"  type="button" value="Save" onclick="insert();">-->
+          <input class="action-button shadow animate blue" type="button" onclick="myFunction()" value="Reset form">
           <br>
         <b><hr size ="8"> </b>
 <aside>
@@ -65,7 +62,6 @@
           <script type="text/javascript" src="../JS/notes.js"></script>
           <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css">
           <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
-
 </body>
   </div>
 </html>

@@ -6,7 +6,7 @@ function init(){
   var image ="../IMG/phone.jpg";
   var note1= $('ul').append(
     '<li class="drag" draggable="true">' +'<img src =../IMG/cancel-music-2.svg class="deleteMe">'+
-      "<p>Title: Ex. Phone Number"+'<br>'+ " Note: Bob Bennett:+(30)6986962631"+'</p>'+'<br>'+
+      "<p>Title: Ex. Phone Number"+'<br>'+ " Note: Bob Bennett: +(30)6986962631"+'</p>'+'<br>'+
         '<img class="chosen" src='+image +'/>'+'<br>'+
       '<p id="source"> Icon made by <a href="http://www.freepik.com" target="_blank" >Freepik</a> from <a href ="http://www.flaticon.com" target ="_blank"> www.flaticon.com</a></p>'+
     '</li>');
@@ -74,7 +74,7 @@ $(document).ready(
       var note= $('ul').append(
         '<li class="drag" draggable="true">' +'<img src =../IMG/cancel-music-2.svg class="deleteMe">'+
           "<p>Title: "+ toAdd +'<br>'+" Note: "+ toAdd2 +'<br>'+
-          '<img class="chosen" src='+image +'/>'+'<br>'+
+          '<img class="chosen" alt="Not Applicable" src='+image +'/>'+'<br>'+
           //alt="not available"
           '</p>'+'<p id="source"> Icon made by <a href="http://www.freepik.com" target="_blank" >Freepik</a> from <a href ="http://www.flaticon.com" target ="_blank"> www.flaticon.com</a></p>'+
         '</li>');
