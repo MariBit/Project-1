@@ -101,9 +101,12 @@ height:20%;
 #reflection:hover{
   width:97%;
 }
+/*
 #btp{
-  text-align: center;
+  text-align: right;
   color:#3c0077;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size:23px;
-}
+  position: absolute;
+  bottom:.2%;
+}*/

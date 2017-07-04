@@ -24,6 +24,7 @@ li,p{
 font-family: 'Yanone Kaffeesatz', sans-serif;
 font-size: 100%;
 font-size: 20px;
+
 }
 
 label{
@@ -100,6 +101,7 @@ li{
   background-color: coral;
   float:left;
   float: inline-block;
+
   padding:2%;
   height:275px;
   width:275px;
@@ -121,6 +123,7 @@ nav{
   text-align: center;
 }
 
+
 img{
   height:10%;
   width:10%;
@@ -130,6 +133,7 @@ img{
           transition:         transform .35s ease-in-out;
   cursor:alias;
 }
+
 
 .chosen{
   float:none;
@@ -181,4 +185,5 @@ img:hover{
   position: relative;
   top:0%;
   float: left;
+
 }
