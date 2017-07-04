@@ -41,8 +41,10 @@ label{
 	border-radius: 10px;
   font-family: 'Crushed', cursive;
 	font-size: 16px;
-  height:4%;
-  width:10%;
+  /*height:4%;
+  width:10%;*/
+  height:35px;
+  width:100px;
   margin-left: 1%;
   margin-right: 1%;
   margin-top: 1%;
@@ -56,8 +58,6 @@ label{
 	border-bottom: 3px solid #f45c43;
 	text-shadow: 0px -1px #f45c43;
 }
-/*#eb3349*/
-
 ::-webkit-file-upload-button {
   background-color: coral;
 	border-bottom: 3px solid #f45c43;
@@ -65,8 +65,7 @@ label{
   border-radius: 10px;
   font-family: 'Crushed', cursive;
   font-size: 16px;
-  height:4.4%;
-
+  height:35px;
   margin-left: 1%;
   margin-right: 1%;
   text-decoration: none;
@@ -75,7 +74,7 @@ label{
 
 .font{
   font-family: 'Crushed', cursive;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 aside{
@@ -88,10 +87,6 @@ background-image: -webkit-linear-gradient(left, #ff9966, #ff5e62, #ff9966);
 background-image: -moz-linear-gradient(left, #ff9966, #ff5e62, #ff9966);
 background-image: -ms-linear-gradient(left, #ff9966, #ff5e62, #ff9966);
 background-image: -o-linear-gradient(left, #ff9966, #ff5e62, #ff9966);
-}
-
-.textbox{
-  width:60%;
 }
 a{
   color:white;
@@ -165,4 +160,8 @@ img:hover{
 }
 #right:hover{
   color:#931000;
+}
+.textbox{
+  width:300px;
+  height:9px;
 }

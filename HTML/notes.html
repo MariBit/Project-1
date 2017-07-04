@@ -24,16 +24,22 @@
          <br>
           <br>
         <!--  <input type="text" name="ListItem"/>-->
+        <div class="wrapper">
           <label for="title">Title:</label> <input class="textbox" name="title" id="title" type="text" placeholder="Ex.Grocery List" />
+        </div>
       <br>
       <br>
+        <div class="wrapper">
           <label for="name">Note:</label><input class="textbox" id="name" name="name" type="text" placeholder="Ex.Eggs, Milk, Meat"/>
+        </div>
       <br>
       <br>
+      <div class= "wrapper">
+      <form id="form9" runat="server" >
         <label class="custom-file-upload">Photo:</label>
-          <form id="form9" runat="server" >
             <input type='file'class="font" id="imgInp" />
         </form>
+      </div>
         <br>
             <input id="button" class="action-button shadow animate blue"type="button" value="Add"/>
           <!--  <input  class="button"  id ="addb" type="button" value="Add" onclick="clearAndShow();">-->
