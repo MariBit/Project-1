@@ -1,73 +1,62 @@
 <!DOCTYPE>
 <html>
     <head>
-      <meta charset="UTF-8">
-    <title>Notepad</title>
-    <link rel="stylesheet" href="../CSS/notes.css">
-      <link href="https://fonts.googleapis.com/css?family=Athiti|Bree+Serif|Crushed|Dosis|Fjalla+One|Open+Sans+Condensed:300|Ubuntu+Condensed|Yanone+Kaffeesatz" rel="stylesheet">
+        <meta charset="UTF-8">
+        <title>Notepad</title>
+        <link rel="stylesheet" href="../CSS/notes.css">
+        <link href="https://fonts.googleapis.com/css?family=Athiti|Bree+Serif|Crushed|Dosis|Fjalla+One|Open+Sans+Condensed:300|Ubuntu+Condensed|Yanone+Kaffeesatz" rel="stylesheet">
     </head>
-
+    <body>
       <form id="form">
-        <nav>
-          <p><a id="right" href="../index.html">Home</a><a id="right" href="../HTML/BMI.html"> BMI Calculator </a><a id="right" href ="">Notepad </a></p>
-        </nav>
-          <div class="bck">
-        <h1><b>Notepad</b></h1>
-              <hr>
-          <h2><b>Please enter note:</b></h2>
-      <label>Select Importance:</label>
-         <select id = "myList" >
-           <option val="">----</option>
-           <option val= "1">Important</option>
-           <option val = "2">None</option>
-         </select>
-         <br>
-          <br>
-        <!--  <input type="text" name="ListItem"/>-->
-        <div class="wrapper">
-          <label for="title">Title:</label> <input class="textbox" name="title" id="title" type="text" placeholder="Ex.Grocery List" />
-        </div>
-      <br>
-      <br>
-        <div class="wrapper">
-          <label for="name">Note:</label><input class="textbox" id="name" name="name" type="text" placeholder="Ex.Eggs, Milk, Meat"/>
-        </div>
-      <br>
-      <br>
-      <div class= "wrapper">
-      <form id="form9" runat="server" >
-        <label class="custom-file-upload">Photo:</label>
-            <input type='file'class="font" id="imgInp" />
-        </form>
-      </div>
-        <br>
-            <input id="button" class="action-button shadow animate blue"type="button" value="Add"/>
-          <!--  <input  class="button"  id ="addb" type="button" value="Add" onclick="clearAndShow();">-->
-          <!--  <input id="removebtn"  type="button" value="Delete"/>-->
-        <!--  <input class="button" type="button" value="Delete" onclick = "delBoxes();" />
-          <input class="button"  type="button" value="Save" onclick="insert();">-->
-          <input class="action-button shadow animate blue" type="button" onclick="myFunction()" value="Reset form">
-          <br>
-        <b><hr size ="8"> </b>
-<aside>
-<div id="backdrop">
-          <h2><b>Note:</b></h2>
+          <nav>
+            <p><a id="right" href="../index.html">Home</a><a id="right" href="../HTML/BMI.html"> BMI Calculator </a><a id="right" href ="">Notepad </a></p>
+          </nav>
+        <div class="bck">
+            <h1><b>Notepad</b></h1>
+            <hr>
+            <h2><b>Please enter note:</b></h2>
+          <form action="">
+            <label>Select Importance:</label>
+              <select id="colorChange">
+                  <option value="coral">----</option>
+                  <option value= "#ff5c3b">Important</option>
+                  <option value = "#fe9962">Information</option>
+              </select>
+          </form>
+              <br>
+              <br>
+            <div class="wrapper">
+              <label for="title">Title:</label> <input class="textbox" name="title" id="title" type="text" placeholder="Ex.Grocery List" />
+            </div>
+              <br>
+              <br>
+            <div class="wrapper">
+              <label for="name">Note:</label><input class="textbox" id="name" name="name" type="text" placeholder="Ex.Eggs, Milk, Meat"/>
+            </div>
+              <br>
+              <br>
+            <div class= "wrapper">
+                <label class="custom-file-upload">Photo:</label>
+                <input type='file'class="font" id="imgInp" />
+            </div>
+                <input id="button" class="action-button shadow animate blue"type="button" value="Add"/>
+                <input class="action-button shadow animate blue" type="button" onclick="myFunction()" value="Reset form">
+              <br>
+              <b><hr size ="8"> </b>
+        <aside>
+          <div id="backdrop">
+            <h2><b>Note:</b></h2>
       </form>
-  <div id="display">
-    <ul id="list">
-    </ul>
-  </div>
-</div>
-</aside>
-          <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-      <!--<script type="text/javascript" src="../JS/notes.js"></script>
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js" type="text/javascript"></script>
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
-     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" type="text/javascript"></script>-->
-
-          <script type="text/javascript" src="../JS/notes.js"></script>
-          <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css">
-          <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
-</body>
-  </div>
+      <div id="display">
+        <ul id="list">
+        </ul>
+      </div>
+          </div>
+        </aside>
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+            <script type="text/javascript" src="../JS/notes.js"></script>
+            <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css">
+            <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+    </body>
+        </div>
 </html>
