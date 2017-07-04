@@ -25,8 +25,8 @@ var messageBox  = document.getElementById("display");
 function init(){
   var image ="../IMG/phone.jpg";
   var note1= $('ul').append(
-    '<li class="drag" draggable="true">' +'<img src =../IMG/cancel-music-2.svg class="deleteMe">'+
-      "<p>Title: Ex. Phone Number"+'<br>'+ " Note: Bob Bennett: +(30)6986962631"+'</p>'+'<br>'+
+    '<li class="drag" draggable="true">'+'<p class="date">'+"2017-07-1"+'</p>' +'<br>' +'<img src =../IMG/cancel-music-2.svg class="deleteMe">'+
+        '<br>'+"<p>Title: Ex. Phone Number"+'<br>'+ " Note: Bob Bennett: +(30)6986962631"+'</p>'+'<br>'+
         '<img class="chosen" src='+image +'/>'+'<br>'+
       '<p id="source"> Icon made by <a href="http://www.freepik.com" target="_blank" >Freepik</a> from <a href ="http://www.flaticon.com" target ="_blank"> www.flaticon.com</a></p>'+
     '</li>');
@@ -59,13 +59,13 @@ function addNote(){
   var toAdd2 =$('input[name=name]').val();
   var color = $('#colorChange').val();
   //var image ="../IMG/example.jpg";
-  var date = new Date();
-    console.log(color , date);
+  var date = new Date().toISOString().slice(0,10);
+      console.log(color , date);
   var image = "../IMG/" + $('#imgInp').val().replace(/C:\\fakepath\\/i, '');
 
   var note= $('ul').append(
-        '<li class="drag" draggable="true" style="background-color:' + color + '">' +'<img src =../IMG/cancel-music-2.svg class="deleteMe">'+
-          "<p>Title: "+ toAdd +'<br>'+" Note: "+ toAdd2 +'<br>'+
+        '<li class="drag" draggable="true" style="background-color:' + color + '">'+'<p class="date">'+date+'</p>' +'<br>'+'<img src =../IMG/cancel-music-2.svg class="deleteMe">'+
+          '<br>'+ "<p>Title: "+ toAdd +'<br>'+" Note: "+ toAdd2 +'<br>'+'<br>'+
           '<img class="chosen" alt="Not Applicable" src='+image +'/>'+'<br>'+
           '</p>'+'<p id="source"> Icon made by <a href="http://www.freepik.com" target="_blank" >Freepik</a> from <a href ="http://www.flaticon.com" target ="_blank"> www.flaticon.com</a></p>'+
         '</li>');

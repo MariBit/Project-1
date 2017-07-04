@@ -87,12 +87,11 @@ padding-right: 4.5%;
 width:20%;
 
 }
-
 hr{
   border: 0;
 height: 2px;
-background-image: -webkit-linear-gradient(left, #159957, #155799, #159957);
-background-image: -moz-linear-gradient(left, #159957, #155799, #159957);
-background-image: -ms-linear-gradient(left, #159957, #155799, #159957);
-background-image: -o-linear-gradient(left, #159957, #155799, #159957);
+background-image: -webkit-linear-gradient(left, #56b4d3,#159957, #56b4d3, #155799,#56b4d3, #159957,#56b4d3);
+background-image: -moz-linear-gradient(left, #56b4d3,#159957, #56b4d3, #155799,#56b4d3, #159957,#56b4d3);
+background-image: -ms-linear-gradient(left, #56b4d3,#159957, #56b4d3, #155799,#56b4d3, #159957,#56b4d3);
+background-image: -o-linear-gradient(left, #56b4d3,#159957, #56b4d3, #155799,#56b4d3, #159957,#56b4d3);
 }
