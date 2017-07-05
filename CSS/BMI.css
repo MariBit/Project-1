@@ -1,16 +1,11 @@
-html, body{
-  background:linear-gradient(to bottom,#4ca2cd,#67b26f);
+html{
+  background:linear-gradient(to bottom,#4ca2cd,#eaecc6);
+  background:linear-gradient(to bottom,#88ddf8,#ffd194);
   text-align: center;
   background-size: cover;
   border: none;
-  min-height: 100%;
+  min-height: 115%;
 
-
-}
-
-body{
-  background-color: rgba(255,255,255,0.6);
-  background-repeat: no-repeat;
 }
 
 h1
@@ -90,8 +85,34 @@ width:20%;
 hr{
   border: 0;
 height: 2px;
-background-image: -webkit-linear-gradient(left, #56b4d3,#159957, #56b4d3, #155799,#56b4d3, #159957,#56b4d3);
+background-image: -webkit-linear-gradient(left,#ffe5d8,#2bc0e4 ,#ffe5d8);
 background-image: -moz-linear-gradient(left, #56b4d3,#159957, #56b4d3, #155799,#56b4d3, #159957,#56b4d3);
 background-image: -ms-linear-gradient(left, #56b4d3,#159957, #56b4d3, #155799,#56b4d3, #159957,#56b4d3);
 background-image: -o-linear-gradient(left, #56b4d3,#159957, #56b4d3, #155799,#56b4d3, #159957,#56b4d3);
+}
+.animate
+{
+	transition: all 0.1s;
+	-webkit-transition: all 0.1s;
+}
+
+.action-button
+{
+	border-radius: 10px;
+  font-family: 'Crushed', cursive;
+	font-size: 16px;
+  height:35px;
+  width:100px;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-top: 1%;
+	text-decoration: none;
+  text-align: center;
+  color:black;
+}
+.blue
+{
+	background-color:#93f9b9;
+	border-bottom: 3px solid #1d976c;
+	text-shadow: 0px 1px #1d976c;
 }
