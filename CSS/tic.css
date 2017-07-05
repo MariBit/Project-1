@@ -1,0 +1,121 @@
+html{
+  background: linear-gradient(to bottom,#00bf8f,#000000);
+  margin-left: 2%;
+}
+
+.row-1{
+  width: 100%;
+}
+.row-2{
+  width: 100%;
+}
+.row-3{
+  width: 100%;
+}
+.row-1 .col-1{
+  border-bottom: 5px solid #c5c5c5;
+  border-right: 5px solid #c5c5c5;
+  width:32%;;
+  height:30%;
+  float: left;
+}
+.row-1 .col-2{
+  border-bottom: 5px solid #c5c5c5;
+  border-right: 5px solid #c5c5c5;
+  border-left: 5px solid #c5c5c5;
+  width:32%;;
+  height:30%;
+  float: left;
+}
+.row-1 .col-3{
+  border-bottom: 5px solid #c5c5c5;
+  border-left: 5px solid #c5c5c5;
+  width:32%;;
+  height:30%;
+  float: left;
+}
+.row-2 .col-1{
+  border-bottom: 5px solid #c5c5c5;
+  border-right: 5px solid #c5c5c5;
+  border-top: 5px solid #c5c5c5;
+  width:32%;;
+  height:30%;
+  float: left;
+}
+.row-2 .col-2{
+  border-bottom: 5px solid #c5c5c5;
+  border-right: 5px solid #c5c5c5;
+  border-top: 5px solid #c5c5c5;
+  border-left: 5px solid #c5c5c5;
+  width:32%;;
+  height:30%;
+  float: left;
+}
+.row-2 .col-3{
+  border-bottom: 5px solid #c5c5c5;
+  border-left: 5px solid #c5c5c5;
+  border-top: 5px solid #c5c5c5;
+  width:32%;;
+  height:30%;
+  float: left;
+}
+.row-3 .col-1{
+  border-top: 5px solid #c5c5c5;
+  border-right: 5px solid #c5c5c5;
+  width:32%;;
+  height:30%;
+  float: left;
+  margin-bottom: 6%;
+}
+.row-3 .col-2{
+  border-top: 5px solid #c5c5c5;
+  border-right: 5px solid #c5c5c5;
+  border-left: 5px solid #c5c5c5;
+  width:32%;;
+  height:30%;
+  float: left;
+  margin-bottom: 6%;
+}
+.row-3 .col-3{
+  border-top: 5px solid #c5c5c5;
+  border-left: 5px solid #c5c5c5;
+  width:32%;;
+  height:30%;
+  float: left;
+  margin-bottom: 6%;
+}
+footer{
+  text-align: center;
+  bottom:50%;
+}
+input{
+  margin-right: 1%;
+}
+h1{
+  text-align: center;
+  font-family: 'Crushed', cursive;
+  color:white;
+  font-size: 60px;
+  margin-bottom:3%;
+  margin-top: 0%;
+}
+#right{
+  font-size: 20px;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-top: 1%;
+  margin-bottom: .3%;
+  padding-left: 4.5%;
+  padding-right: 4.5%;
+  width:20%;
+  color:black;
+}
+nav{
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+  text-align: center;
+  margin: 1%;
+  padding: 0.4% 1%;
+
+}
