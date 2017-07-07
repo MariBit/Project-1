@@ -1,6 +1,6 @@
 html{
-  background:linear-gradient(to bottom,#4ca2cd,#eaecc6);
-  background:linear-gradient(to bottom,#88ddf8,#ffd194);
+  background:linear-gradient(170deg,#085078,#85d8ce);
+  /*background:linear-gradient(to bottom,#88ddf8,#ffd194);*/
   text-align: center;
   background-size: cover;
   border: none;
@@ -11,30 +11,25 @@ html{
 h1
 {
 font-family: 'Slabo 27px', serif;
-font-size: 36px;
+font-size: 40px;
 float: none;
 
 
 }
 h2, h3{
 font-family: 'Roboto Condensed', sans-serif;
-font-size: 24px;
+font-size: 28px;
 
 }
 p{
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 22px;
+  font-size: 26px;
 }
 #formula, .button{
   font-family: 'Slabo 27px', serif;
   font-size: 27px;
 }
-.button{
- height:40%;
- width:10%;
- text-align: center;
- display: inline-block;
-}
+
 .values {
 font-family: 'Oswald', sans-serif;
 font-size:16px;
@@ -45,10 +40,13 @@ option{
 }
 a{
   text-decoration: none;
-  color:#884581;
+  color:#d9c6d7;
 }
 #webs:hover{
   text-shadow: #552b51-.5px 15px 10px;
+}
+#webs{
+  color:#6c4868;
 }
 #comment, #output,.imagesource{
   font-size: 24px;
@@ -85,10 +83,10 @@ width:20%;
 hr{
   border: 0;
 height: 2px;
-background-image: -webkit-linear-gradient(left,#2bc0e4 ,#ffe5d8,#2bc0e4);
-background-image: -moz-linear-gradient(left,#2bc0e4 ,#ffe5d8,#2bc0e4);
-background-image: -ms-linear-gradient(left,#2bc0e4 ,#ffe5d8,#2bc0e4);
-background-image: -o-linear-gradient(left,#2bc0e4 ,#ffe5d8,#2bc0e4);
+background-image: -webkit-linear-gradient(left,#8ca6db,#b993d6,#8ca6db);
+background-image: -moz-linear-gradient(left,#8ca6db,#b993d6,#8ca6db);
+background-image: -ms-linear-gradient(left,#8ca6db,#b993d6,#8ca6db);
+background-image: -o-linear-gradient(left,#8ca6db,#b993d6,#8ca6db);
 }
 .animate
 {
@@ -105,14 +103,17 @@ background-image: -o-linear-gradient(left,#2bc0e4 ,#ffe5d8,#2bc0e4);
   width:100px;
   margin-left: 1%;
   margin-right: 1%;
-  margin-top: 1%;
 	text-decoration: none;
   text-align: center;
-  color:black;
+  color:#191654;
+  font-size: 17px;
+  text-align: center;
+  display: inline-block;
 }
+
 .blue
 {
-	background-color:#93f9b9;
-	border-bottom: 3px solid #1d976c;
-	text-shadow: 0px 1px #1d976c;
+	background-color:#bdfbff;
+	border-bottom: 3px solid #191654;
+	text-shadow: 0px 1px #bdfff3;
 }
