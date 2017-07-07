@@ -1,6 +1,7 @@
 html{
   background: linear-gradient(to bottom,#00bf8f,#000000);
   margin-left: 2%;
+  min-height:120%;
 }
 
 .row-1{
@@ -12,78 +13,33 @@ html{
 .row-3{
   width: 100%;
 }
-.row-1 .col-1{
+.col:nth-child(1){
   border-bottom: 5px solid #c5c5c5;
   border-right: 5px solid #c5c5c5;
-  width:32%;;
+  width:32%;
   height:30%;
   float: left;
 }
-.row-1 .col-2{
+.col:nth-child(2){
   border-bottom: 5px solid #c5c5c5;
   border-right: 5px solid #c5c5c5;
   border-left: 5px solid #c5c5c5;
-  width:32%;;
+  width:32%;
   height:30%;
   float: left;
 }
-.row-1 .col-3{
+.col:nth-child(3){
   border-bottom: 5px solid #c5c5c5;
   border-left: 5px solid #c5c5c5;
-  width:32%;;
+  width:32%;
   height:30%;
   float: left;
 }
-.row-2 .col-1{
-  border-bottom: 5px solid #c5c5c5;
-  border-right: 5px solid #c5c5c5;
-  border-top: 5px solid #c5c5c5;
-  width:32%;;
-  height:30%;
-  float: left;
+.row:nth-child(3)  .col {
+  border-bottom: none;
+  margin-bottom: 3%;
 }
-.row-2 .col-2{
-  border-bottom: 5px solid #c5c5c5;
-  border-right: 5px solid #c5c5c5;
-  border-top: 5px solid #c5c5c5;
-  border-left: 5px solid #c5c5c5;
-  width:32%;;
-  height:30%;
-  float: left;
-}
-.row-2 .col-3{
-  border-bottom: 5px solid #c5c5c5;
-  border-left: 5px solid #c5c5c5;
-  border-top: 5px solid #c5c5c5;
-  width:32%;;
-  height:30%;
-  float: left;
-}
-.row-3 .col-1{
-  border-top: 5px solid #c5c5c5;
-  border-right: 5px solid #c5c5c5;
-  width:32%;;
-  height:30%;
-  float: left;
-  margin-bottom: 6%;
-}
-.row-3 .col-2{
-  border-top: 5px solid #c5c5c5;
-  border-right: 5px solid #c5c5c5;
-  border-left: 5px solid #c5c5c5;
-  width:32%;;
-  height:30%;
-  float: left;
-  margin-bottom: 6%;
-}
-.row-3 .col-3{
-  border-top: 5px solid #c5c5c5;
-  border-left: 5px solid #c5c5c5;
-  width:32%;;
-  height:30%;
-  float: left;
-  margin-bottom: 6%;
-}
+
 aside{
   text-align: center;
   bottom:50%;
@@ -116,9 +72,10 @@ nav{
   border-radius: 5px;
   text-align: center;
   margin: 1%;
-  padding: 0.4% 1%;
-
+  padding-bottom: .5%;
+  padding-top: .5%;
 }
+
 button{
   margin-bottom: 2%;
 }
@@ -148,4 +105,22 @@ button{
 	background-color:#93f9b9;
 	border-bottom: 3px solid #1d976c;
 	text-shadow: 0px 1px #1d976c;
+}
+label,p,.message{
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 27px;
+  position: relative;
+}
+p{
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: 20px;
+  position: relative;
+  margin-top: 0%;
+}
+div{
+  text-align: center;
+  font-family: 'Crushed', cursive;
+  color:white;
+  font-size: 100px;
+
 }

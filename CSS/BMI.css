@@ -4,7 +4,7 @@ html{
   text-align: center;
   background-size: cover;
   border: none;
-  min-height: 115%;
+  min-height: 105%;
 
 }
 
@@ -77,18 +77,18 @@ margin-left: 4%;
 margin-right: 4%;
 margin-top: 1%;
 margin-bottom: .3%;
-padding-left: 4.5%;
-padding-right: 4.5%;
+padding-left: 7%;
+padding-right: 7%;
 width:20%;
 
 }
 hr{
   border: 0;
 height: 2px;
-background-image: -webkit-linear-gradient(left,#ffe5d8,#2bc0e4 ,#ffe5d8);
-background-image: -moz-linear-gradient(left, #56b4d3,#159957, #56b4d3, #155799,#56b4d3, #159957,#56b4d3);
-background-image: -ms-linear-gradient(left, #56b4d3,#159957, #56b4d3, #155799,#56b4d3, #159957,#56b4d3);
-background-image: -o-linear-gradient(left, #56b4d3,#159957, #56b4d3, #155799,#56b4d3, #159957,#56b4d3);
+background-image: -webkit-linear-gradient(left,#2bc0e4 ,#ffe5d8,#2bc0e4);
+background-image: -moz-linear-gradient(left,#2bc0e4 ,#ffe5d8,#2bc0e4);
+background-image: -ms-linear-gradient(left,#2bc0e4 ,#ffe5d8,#2bc0e4);
+background-image: -o-linear-gradient(left,#2bc0e4 ,#ffe5d8,#2bc0e4);
 }
 .animate
 {
