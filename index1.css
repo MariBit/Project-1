@@ -68,10 +68,10 @@ table{
   cursor:pointer;
 }
 .app3{
-margin-left: 3.5%;
+margin-left: 2%;
 }
 .app2{
-  margin-right: 2.15%;
+  margin-right: 2.5%;
 }
 .app{
   margin-left: 1.5%;
@@ -101,12 +101,3 @@ height:20%;
 #reflection:hover{
   width:97%;
 }
-/*
-#btp{
-  text-align: right;
-  color:#3c0077;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
-  font-size:23px;
-  position: absolute;
-  bottom:.2%;
-}*/
